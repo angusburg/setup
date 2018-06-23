@@ -1,6 +1,12 @@
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Node Version Manager
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
+# Install Yarn
+brew install yarn --without-node
+
 # Install dependencies
 brew install macvim
 brew install zsh
