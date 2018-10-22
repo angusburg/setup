@@ -23,7 +23,7 @@ ssh-keygen -t rsa -b 4096 -C "angushtlam@gmail.com"
 cat ~/.ssh/id_rsa.pub > ~/Desktop/id_rsa.pub
 
 # Install useful apps
-homebrew cask install google-chrome visual-studio-code spectacle 1password alfred iterm2 sketch
+homebrew cask install firefox visual-studio-code spectacle 1password iterm2 sketch
 
 # Set up Mac dock configs
 defaults write com.apple.dock persistent-apps -array
