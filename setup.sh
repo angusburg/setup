@@ -16,14 +16,14 @@ ssh-keygen -t rsa -b 4096 -C "angushtlam@gmail.com"
 cat ~/.ssh/id_rsa.pub > ~/Desktop/id_rsa.pub
 
 # Install useful apps
-brew cask install google-chrome firefox visual-studio-code spectacle 1password iterm2 sketch
+brew cask install 1password firefox google-chrome iterm2 spectacle sketch spotify visual-studio-code
 
 # Install fonts
 cp files/Source\ Code\ Pro\ for\ Powerline.otf ~/Library/Fonts/
 # Copy .zsh setup
 cp files/.zshrc ~/
 # Set up Spectacle key bindings
-cp -r files/Spectacle ~/Library/Application\ Support/
+cp -r files/Spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/
 
 # Set up Mac dock configs
 defaults write com.apple.dock persistent-apps -array
