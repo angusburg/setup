@@ -8,22 +8,22 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 brew install yarn --without-node
 
 # Install dependencies
-brew install macvim
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# Install fonts
-cp files/Source\ Code\ Pro\ for\ Powerline.otf ~/Library/Fonts/
-
-# Copy .zsh setup
-cp files/.zshrc ~/
 
 # Set up SSH key
 ssh-keygen -t rsa -b 4096 -C "angushtlam@gmail.com"
 cat ~/.ssh/id_rsa.pub > ~/Desktop/id_rsa.pub
 
 # Install useful apps
-homebrew cask install firefox visual-studio-code spectacle 1password iterm2 sketch
+brew cask install google-chrome firefox visual-studio-code spectacle 1password iterm2 sketch
+
+# Install fonts
+cp files/Source\ Code\ Pro\ for\ Powerline.otf ~/Library/Fonts/
+# Copy .zsh setup
+cp files/.zshrc ~/
+# Set up Spectacle key bindings
+cp -r files/Spectacle ~/Library/Application\ Support/
 
 # Set up Mac dock configs
 defaults write com.apple.dock persistent-apps -array
